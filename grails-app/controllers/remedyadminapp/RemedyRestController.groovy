@@ -12,6 +12,21 @@ class RemedyRestController extends RestfulController {
         super(Remedy)
     }
 
+    def remedyList() {
+        def resList =  []
+        Remedy.list().each { remedy ->
+            JSONRemedyItem remedyItem = new JSONRemedyItem()
+            remedyItem.id = remedy.id
+            remedyItem.description = remedy.description
+            remedyItem.status = remedy.status
+            remedyItem.errorType = remedy.errorType
+            remedyItem.area = remedy.area
+            remedyItem.machine = remedy.machine
+            resList << remedyItem
+        }
+        respond resList
+    }
+
     def index() {
         println "index"
         respond Remedy.list()
@@ -19,12 +34,30 @@ class RemedyRestController extends RestfulController {
 
     def show(Integer id) {
         println "show"
-        respond Remedy.get(id)
+        def remedy = Remedy.get(id)
+        def remedyItem = new JSONRemedyItem()
+        remedyItem.id = remedy.id
+        remedyItem.description = remedy.description
+        remedyItem.status = remedy.status
+        remedyItem.errorType = remedy.errorType
+        remedyItem.area = remedy.area
+        remedyItem.machine = remedy.machine
+        println "remedy.photo "  +remedy.photo.class
+        String fileString = new String(remedy.photo,"UTF-8");
+        println "remedy.photo "  +remedy.photo.class
+        remedyItem.photo = fileString
+        respond remedyItem
     }
 
     def save(SaveRemedy remedyInstance) {
         println "heps"
         println "description ${remedyInstance.description} "
+        def f = request.getFile('photo')
+
+        println f
+        println f.bytes
+        println f.contentType
+        //println "f ${remedyInstance.photo} "
        // println "status ${remedyInstance.status} "
 
         if (remedyInstance == null) {
@@ -42,11 +75,23 @@ class RemedyRestController extends RestfulController {
         ErrorType errorType = ErrorType.findById remedyInstance.errorTypeId
 
         def newRemedy = new Remedy(description: remedyInstance.description, status: status, area: area, machine: machine, errorType: errorType)
-
+        newRemedy.photo = f.bytes
         newRemedy.save flush: true
 
         respond newRemedy, status: 201
     }
+}
+
+
+
+class JSONRemedyItem {
+    Long id
+    String description
+    Status status;
+    Area area
+    Machine machine
+    ErrorType errorType
+    byte[] photo
 }
 
 class SaveRemedy {
