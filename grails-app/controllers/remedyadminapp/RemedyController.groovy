@@ -22,13 +22,14 @@ class RemedyController {
     def showImage(int id) {
         println "id ${id}"
         def remedy = Remedy.get(id)
-        remedy.photo; // bytes
         def arrayOfBytes = remedy.getPhoto()
-        response.setContentType("image/jpeg");
-        response.setContentLength(arrayOfBytes.length);
-        ServletOutputStream stream = response.getOutputStream();
-        stream.write(arrayOfBytes);
-        stream.flush();
+        if(arrayOfBytes!=null) {
+            response.setContentType("image/jpeg");
+            response.setContentLength(arrayOfBytes.length);
+            ServletOutputStream stream = response.getOutputStream();
+            stream.write(arrayOfBytes);
+            stream.flush();
+        }
     }
 
     def create() {
@@ -56,7 +57,7 @@ class RemedyController {
         }
 
         if (remedyInstance.hasErrors()) {
-            respond remedyInstance.errors, view: 'create'
+            respond remedyInstance.errors, view: 'bck_create'
             return
         }
 
@@ -88,7 +89,7 @@ class RemedyController {
         }
 
         if (remedyInstance.hasErrors()) {
-            respond remedyInstance.errors, view: 'edit'
+            respond remedyInstance.errors, view: 'bck_edit'
             return
         }
 

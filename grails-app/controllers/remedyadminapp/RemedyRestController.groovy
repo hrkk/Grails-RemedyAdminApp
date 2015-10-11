@@ -22,6 +22,14 @@ class RemedyRestController extends RestfulController {
             remedyItem.errorType = remedy.errorType
             remedyItem.area = remedy.area
             remedyItem.machine = remedy.machine
+            remedy.getLogs().each { remedyadminapp.Log log ->
+                def jSONLog = new JSONLog()
+                jSONLog.status = log.status
+                jSONLog.lastUpdated = log.lastUpdated
+                jSONLog.statusChangeByName = log.statusChangeByName
+                remedyItem.logs.add(jSONLog)
+            }
+
             resList << remedyItem
         }
         respond resList
@@ -50,15 +58,13 @@ class RemedyRestController extends RestfulController {
     }
 
     def save(SaveRemedy remedyInstance) {
-        println "heps"
         println "description ${remedyInstance.description} "
-        def f = request.getFile('photo')
+        def f = request?.getFile('photo')
 
         println f
         println f.bytes
         println f.contentType
-        //println "f ${remedyInstance.photo} "
-       // println "status ${remedyInstance.status} "
+
 
         if (remedyInstance == null) {
             respond status: HttpStatus.BAD_REQUEST
@@ -80,8 +86,64 @@ class RemedyRestController extends RestfulController {
 
         respond newRemedy, status: 201
     }
-}
 
+    def saveNoImage(SaveRemedy remedyInstance) {
+        println "description ${remedyInstance.description} "
+
+        if (remedyInstance == null) {
+            respond status: HttpStatus.BAD_REQUEST
+        }
+
+        if (remedyInstance.hasErrors()) {
+            println "Errors ${remedyInstance.errors}"
+            respond status: HttpStatus.BAD_REQUEST
+        }
+
+        Status status = Status.findById remedyInstance.statusId
+        Area area = Area.findById remedyInstance.areaId
+        Machine machine = Machine.findById remedyInstance.machineId
+        ErrorType errorType = ErrorType.findById remedyInstance.errorTypeId
+
+        def newRemedy = new Remedy(description: remedyInstance.description, status: status, area: area, machine: machine, errorType: errorType)
+        newRemedy.save flush: true
+
+        respond newRemedy, status: 201
+    }
+
+    def updateNoImage(UpdateRemedy remedyInstance) {
+        println "description ${remedyInstance.description} "
+
+        if (remedyInstance == null) {
+            respond status: HttpStatus.BAD_REQUEST
+        }
+
+        if (remedyInstance.hasErrors()) {
+            println "Errors ${remedyInstance.errors}"
+            respond status: HttpStatus.BAD_REQUEST
+        }
+
+        Status status = Status.findById remedyInstance.statusId
+        Area area = Area.findById remedyInstance.areaId
+        Machine machine = Machine.findById remedyInstance.machineId
+        ErrorType errorType = ErrorType.findById remedyInstance.errorTypeId
+
+        def updateRemedy = Remedy.findById(remedyInstance.id)
+        updateRemedy.description = remedyInstance.description
+        updateRemedy.status = status
+        updateRemedy.area = area
+        updateRemedy.machine = machine
+        updateRemedy.errorType = errorType
+
+        updateRemedy.save(flush: true)
+
+        respond updateRemedy, status: 201
+    }
+}
+class JSONLog {
+    Date lastUpdated
+    Status status;
+    String statusChangeByName
+}
 
 
 class JSONRemedyItem {
@@ -92,6 +154,7 @@ class JSONRemedyItem {
     Machine machine
     ErrorType errorType
     byte[] photo
+    def logs = []
 }
 
 class SaveRemedy {
@@ -110,6 +173,24 @@ class SaveRemedy {
     }
 }
 
+
+class UpdateRemedy {
+    Long id
+    String description
+    Long statusId
+    Long areaId
+    Long machineId
+    Long errorTypeId
+
+    static constraints = {
+        id blank: false, nullable: false
+        description blank: false, nullable: false
+        statusId blank: false, nullable: false
+        areaId blank: false, nullable: false
+        machineId blank: false, nullable: false
+        errorTypeId blank: false, nullable: false
+    }
+}
 
 
 

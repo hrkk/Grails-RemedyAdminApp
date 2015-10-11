@@ -5,7 +5,10 @@ import remedyadminapp.Nose
 import remedyadminapp.Remedy
 import remedyadminapp.ErrorType
 import remedyadminapp.Status
-
+import remedyadminapp.Log
+import remedyadminapp.Role
+import remedyadminapp.User
+import remedyadminapp.UserRole
 class BootStrap {
 
     def init = { servletContext ->
@@ -14,6 +17,7 @@ class BootStrap {
         switch (Environment.current) {
             case Environment.DEVELOPMENT:
                 result = 'now running in DEV mode.'
+                seedUserRole()
                 seedTestData()
                 break;
             case Environment.TEST:
@@ -29,6 +33,21 @@ class BootStrap {
     }
     def destroy = {
         println "Application shutting down... "
+    }
+
+    private void seedUserRole() {
+        def adminRole = new Role('ROLE_ADMIN').save()
+        def userRole = new Role('ROLE_USER').save()
+
+        def testUser = new User('me', 'password').save()
+
+        UserRole.create testUser, adminRole, true
+        UserRole.create testUser, userRole, true
+
+
+        assert User.count() == 1
+        assert Role.count() == 2
+        assert UserRole.count() == 2
     }
 
     private void seedTestData() {
@@ -114,14 +133,12 @@ class BootStrap {
         assert Machine.count == 3;
         println "Finished loading $ErrorType.count machines into database"
 
-
         def remedy = null
         println "Start loading remedy into database"
         remedy = new Remedy(description: "Some simple test remedy", status: status, area: area, machine: machine, errorType: errorType)
+      //  remedy.addToLogs(new remedyadminapp.Log(statusChangeByName: "BootStrap Test (1)", status: Status.findById(1)));
+       // remedy.addToLogs(new remedyadminapp.Log(statusChangeByName: "BootStrap Test (2)", status: Status.findById(2)));
         assert remedy.save(failOnError: true, flush: true, insert: true)
-
-
-
-    }
+   }
 
 }

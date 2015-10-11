@@ -25,7 +25,7 @@
 			
 				<g:if test="${remedyInstance?.photo}">
 				<li class="fieldcontain">
-					<span id="photo-label" class="property-label"><img class="avatar" height="100" src="${createLink(controller:'remedy', action:'avatar_image', id:remedyInstance.id)}" /></span>
+					<span id="photo-label" class="property-label"><g:message code="remedy.photo.label" default="Photo" /></span>
 					
 				</li>
 				</g:if>
@@ -53,6 +53,17 @@
 					<span id="errorType-label" class="property-label"><g:message code="remedy.errorType.label" default="Error Type" /></span>
 					
 						<span class="property-value" aria-labelledby="errorType-label"><g:link controller="errorType" action="show" id="${remedyInstance?.errorType?.id}">${remedyInstance?.errorType?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${remedyInstance?.logs}">
+				<li class="fieldcontain">
+					<span id="logs-label" class="property-label"><g:message code="remedy.logs.label" default="Logs" /></span>
+					
+						<g:each in="${remedyInstance.logs}" var="l">
+						<span class="property-value" aria-labelledby="logs-label"><g:link controller="log" action="show" id="${l.id}">${l?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

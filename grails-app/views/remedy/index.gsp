@@ -41,9 +41,8 @@
 				<tbody>
 				<g:each in="${remedyInstanceList}" status="i" var="remedyInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-
-
-						<td><g:link action="show" id="${remedyInstance.id}"><img class="avatar" height="100" src="${createLink(controller:'remedy', action:'avatar_image', id:remedyInstance.id)}" /></g:link></td>
+					
+						<td><g:link action="show" id="${remedyInstance.id}">${fieldValue(bean: remedyInstance, field: "photo")}</g:link></td>
 					
 						<td>${fieldValue(bean: remedyInstance, field: "area")}</td>
 					

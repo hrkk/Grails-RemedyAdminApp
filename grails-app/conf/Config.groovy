@@ -113,3 +113,33 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'remedyadminapp.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'remedyadminapp.UserRole'
+grails.plugin.springsecurity.authority.className = 'remedyadminapp.Role'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                ['permitAll'],
+	'/index':           ['permitAll'],
+	'/index.gsp':       ['permitAll'],
+	'/assets/**':       ['permitAll'],
+	'/**/js/**':        ['permitAll'],
+	'/**/css/**':       ['permitAll'],
+	'/**/images/**':    ['permitAll'],
+	'/**/favicon.ico':  ['permitAll'],
+    '/remedy*/**':       ['permitAll'],
+    '/remedyErrorRest/**':      ['ROLE_USER'],
+    '/remedyError/**':      ['ROLE_ADMIN'],
+    '/area/**':                 ['ROLE_ADMIN'],
+    '/areaControllerRest/**':   ['ROLE_USER'],
+    '/machine/**':       ['ROLE_ADMIN'],
+    '/machineRest/**':   ['ROLE_USER'],
+    '/status/**':        ['ROLE_ADMIN'],
+    '/statusRest/**':    ['ROLE_USER'],
+    '/userRest/**':      ['ROLE_USER']
+]
+
+grails.plugin.springsecurity.useBasicAuth = true
+grails.plugin.springsecurity.basic.realmName = true
+

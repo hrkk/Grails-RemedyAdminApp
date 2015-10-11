@@ -5,9 +5,8 @@
 <div class="fieldcontain ${hasErrors(bean: remedyInstance, field: 'photo', 'error')} ">
 	<label for="photo">
 		<g:message code="remedy.photo.label" default="Photo" />
-
+		
 	</label>
-	<img class="avatar" src="${createLink(controller:'remedy', action:'avatar_image', id:remedyInstance.id)}" />
 	<input type="file" id="photo" name="photo" />
 </div>
 
@@ -33,6 +32,23 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select id="errorType" name="errorType.id" from="${remedyadminapp.ErrorType.list()}" optionKey="id" required="" value="${remedyInstance?.errorType?.id}" class="many-to-one"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: remedyInstance, field: 'logs', 'error')} ">
+	<label for="logs">
+		<g:message code="remedy.logs.label" default="Logs" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${remedyInstance?.logs?}" var="l">
+    <li><g:link controller="log" action="show" id="${l.id}">${l?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="log" action="create" params="['remedy.id': remedyInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'log.label', default: 'Log')])}</g:link>
+</li>
+</ul>
+
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: remedyInstance, field: 'machine', 'error')} required">
