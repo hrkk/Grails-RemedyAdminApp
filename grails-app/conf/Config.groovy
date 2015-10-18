@@ -128,7 +128,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/css/**':       ['permitAll'],
 	'/**/images/**':    ['permitAll'],
 	'/**/favicon.ico':  ['permitAll'],
-    '/remedy*/**':       ['permitAll'],
+    '/remedy*/**':      ['permitAll'],
     '/remedyErrorRest/**':      ['ROLE_USER'],
     '/remedyError/**':      ['ROLE_ADMIN'],
     '/area/**':                 ['ROLE_ADMIN'],
@@ -137,7 +137,10 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
     '/machineRest/**':   ['ROLE_USER'],
     '/status/**':        ['ROLE_ADMIN'],
     '/statusRest/**':    ['ROLE_USER'],
-    '/userRest/**':      ['ROLE_USER']
+    '/userRest/**':      ['ROLE_USER'],
+    '/profile/**':       ['ROLE_ADMIN'],
+    '/user/**':       ['ROLE_ADMIN'],
+    '/role/**':       ['ROLE_ADMIN']
 ]
 
 grails.plugin.springsecurity.useBasicAuth = true

@@ -10,6 +10,10 @@ class RemedyController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "DELETE"]
 
+    def scaffold = true
+
+    /*
+
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Remedy.list(params), model: [remedyInstanceCount: Remedy.count()]
@@ -64,15 +68,15 @@ class RemedyController {
         if(!remedyInstance.save(flush: true))
             println "ERROR ved savbe"
 
-        /*
-        request.withFormat {
-            form {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'remedyInstance.label', default: 'Remedy'), remedyInstance.id])
-                redirect remedyInstance
-            }
-            '*' { respond remedyInstance, [status: CREATED] }
-        }
-        */
+//
+//        request.withFormat {
+//            form {
+//                flash.message = message(code: 'default.created.message', args: [message(code: 'remedyInstance.label', default: 'Remedy'), remedyInstance.id])
+//                redirect remedyInstance
+//            }
+//            '*' { respond remedyInstance, [status: CREATED] }
+//        }
+
         flash.message = message(code: 'default.created.message', args: [message(code: 'remedyInstance.label', default: 'Remedy'), remedyInstance.id])
         redirect(action:'show')
     }
@@ -129,4 +133,5 @@ class RemedyController {
             '*' { render status: NOT_FOUND }
         }
     }
+    */
 }

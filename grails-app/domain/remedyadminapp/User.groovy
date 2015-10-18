@@ -13,11 +13,16 @@ class User implements Serializable {
     boolean accountLocked
     boolean passwordExpired
 
+    static hasOne = [profile : Profile] // profile part of user
+    static hasMany = [remedies: Remedy]
+
+    /*
     User(String username, String password) {
         this()
         this.username = username
         this.password = password
     }
+    */
 
     @Override
     int hashCode() {
@@ -57,6 +62,7 @@ class User implements Serializable {
     static constraints = {
         username blank: false, unique: true
         password blank: false
+        profile nullable: true
     }
 
     static mapping = {

@@ -3,6 +3,8 @@ package remedyadminapp
 import grails.rest.RestfulController
 import org.springframework.http.HttpStatus
 
+import javax.servlet.ServletOutputStream
+
 // curl -H "Content-Type: application/json" -X GET http://localhost:8080/RemedyAdminApp/remedyRest/index
 // curl -H "Content-Type: application/json" -X POST -d '{"description":"face2", "statusId":1, "areaId":1}' http://localhost:8080/RemedyAdminApp/remedyRest/save
 class RemedyRestController extends RestfulController {
@@ -11,6 +13,20 @@ class RemedyRestController extends RestfulController {
     RemedyRestController() {
         super(Remedy)
     }
+
+    def showImage(int id) {
+        println "id ${id}"
+        def remedy = Remedy.get(id)
+        def arrayOfBytes = remedy.getPhoto()
+        if(arrayOfBytes!=null) {
+            response.setContentType("image/jpeg");
+            response.setContentLength(arrayOfBytes.length);
+            ServletOutputStream stream = response.getOutputStream();
+            stream.write(arrayOfBytes);
+            stream.flush();
+        }
+    }
+
 
     def remedyList() {
         def resList =  []
@@ -22,17 +38,56 @@ class RemedyRestController extends RestfulController {
             remedyItem.errorType = remedy.errorType
             remedyItem.area = remedy.area
             remedyItem.machine = remedy.machine
-            remedy.getLogs().each { remedyadminapp.Log log ->
+
+
+           def logs = remedy.getLogs().sort {
+               it.id
+           }
+            logs = logs.reverse()
+
+            logs.each { remedyadminapp.Log log ->
                 def jSONLog = new JSONLog()
                 jSONLog.status = log.status
-                jSONLog.lastUpdated = log.lastUpdated
+                jSONLog.lastUpdated =  getNiceDate(log.lastUpdated)
                 jSONLog.statusChangeByName = log.statusChangeByName
                 remedyItem.logs.add(jSONLog)
             }
-
+            remedyItem.assignedTo = remedy.user.profile.fullName
             resList << remedyItem
         }
         respond resList
+    }
+
+    protected String getNiceDate(Date date) {
+        def now = new Date()
+        def diff = Math.abs(now.time - date.time)
+        final long second = 1000
+        final long minute = second * 60
+        final long hour = minute * 60
+        final long day = hour * 24
+        def niceTime = ""
+        long calc = 0;
+        calc = Math.floor(diff / day)
+        if (calc) {
+            niceTime += calc + " day" + (calc > 1 ? "s " : " ")
+            diff %= day
+        }
+        calc = Math.floor(diff / hour)
+        if (calc) {
+            niceTime += calc + " hour" + (calc > 1 ? "s " : " ")
+            diff %= hour
+        }
+        calc = Math.floor(diff / minute)
+        if (calc) {
+            niceTime += calc + " minute" + (calc > 1 ? "s " : " ")
+            diff %= minute
+        }
+        if (!niceTime) {
+            niceTime = "Right now"
+        } else {
+            niceTime += (date.time > now.time) ? "from now" : "ago"
+        }
+        return niceTime
     }
 
     def index() {
@@ -84,7 +139,8 @@ class RemedyRestController extends RestfulController {
         newRemedy.photo = f.bytes
         newRemedy.save flush: true
 
-        respond newRemedy, status: 201
+        //respond newRemedy, status: 201
+        respond status: 201
     }
 
     def saveNoImage(SaveRemedy remedyInstance) {
@@ -107,7 +163,8 @@ class RemedyRestController extends RestfulController {
         def newRemedy = new Remedy(description: remedyInstance.description, status: status, area: area, machine: machine, errorType: errorType)
         newRemedy.save flush: true
 
-        respond newRemedy, status: 201
+        //respond newRemedy, status: 201
+        respond status: 201
     }
 
     def updateNoImage(UpdateRemedy remedyInstance) {
@@ -135,12 +192,14 @@ class RemedyRestController extends RestfulController {
         updateRemedy.errorType = errorType
 
         updateRemedy.save(flush: true)
+      //  updateRemedy.save()
 
-        respond updateRemedy, status: 201
+        //respond updateRemedy, status: 201
+        respond status: 201
     }
 }
 class JSONLog {
-    Date lastUpdated
+    String lastUpdated
     Status status;
     String statusChangeByName
 }
@@ -155,6 +214,7 @@ class JSONRemedyItem {
     ErrorType errorType
     byte[] photo
     def logs = []
+    String assignedTo
 }
 
 class SaveRemedy {

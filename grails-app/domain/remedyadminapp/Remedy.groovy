@@ -1,6 +1,7 @@
 package remedyadminapp
 
 class Remedy {
+    def springSecurityService
     /* Default (injected) attributes of GORM */
     Long    id
     Long    version
@@ -15,20 +16,34 @@ class Remedy {
     ErrorType errorType
     byte[] photo // tells GORM to store is as a BLOB
 
-    List logs
+
     static hasMany = [logs: Log]
+    static belongsTo = [ user: User ]   // when the user is deleted all his remedy's is deleted too
 
     static constraints = {
+        area()
         photo nullable: true, maxSize: 2 * 1024 * 1024
+        user nullable: true
     }
 
     def beforeInsert() {
-        println "beforeInsert for remedy"
-        this.addToLogs(new remedyadminapp.Log(statusChangeByName: "TBD get Name by UserID", status: Status.findById(1)));
+        println "beforeInsert for remedy : status ${status.id}"
+        def user = springSecurityService.currentUser
+        def fullName = "Default need for testdata"
+        if(user?.profile?.fullName)
+            fullName = user?.profile?.fullName
+
+        this.addToLogs(new remedyadminapp.Log(statusChangeByName: fullName, status: status));
     }
 
     def beforeUpdate() {
-        println "afterUpdate for remedy with id ${this.id}"
-        this.addToLogs(new remedyadminapp.Log(statusChangeByName: "TBD get Name by UserID", status: Status.findById(1)));
+        println "beforeUpdate for remedy with id ${this.id} status: ${status.id}"
+        def user = springSecurityService.currentUser
+        if(user?.profile?.fullName) {
+            def fullName = user?.profile?.fullName
+            println "fullName =" + fullName
+            def log = new remedyadminapp.Log(statusChangeByName: fullName, status: status, remedy: this)
+            this.addToLogs(log);
+        }
     }
 }

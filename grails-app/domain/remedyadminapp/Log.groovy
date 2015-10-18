@@ -9,11 +9,15 @@ class Log {
     Date    dateCreated
     Date    lastUpdated
 
-    String statusChangeByName // change to user id
+    String statusChangeByName // changed by user id
     Status status
 
     static belongsTo = [remedy:Remedy]
 
     static constraints = {
+    }
+
+    static mapping = {
+        sort dateCreated:"desc"
     }
 }
