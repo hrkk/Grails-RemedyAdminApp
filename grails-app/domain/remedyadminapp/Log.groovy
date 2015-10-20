@@ -13,8 +13,10 @@ class Log {
     Status status
 
     static belongsTo = [remedy:Remedy]
+    User user // Log is attached to a user Object
 
     static constraints = {
+        user nullable: true
     }
 
     static mapping = {

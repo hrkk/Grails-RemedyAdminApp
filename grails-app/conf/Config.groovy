@@ -140,7 +140,8 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
     '/userRest/**':      ['ROLE_USER'],
     '/profile/**':       ['ROLE_ADMIN'],
     '/user/**':       ['ROLE_ADMIN'],
-    '/role/**':       ['ROLE_ADMIN']
+    '/role/**':       ['ROLE_ADMIN'],
+    '/logRest/**':      ['ROLE_USER']
 ]
 
 grails.plugin.springsecurity.useBasicAuth = true

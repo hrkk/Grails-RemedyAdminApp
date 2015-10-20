@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus
 
 import javax.servlet.ServletOutputStream
 
-// curl -H "Content-Type: application/json" -X GET http://localhost:8080/RemedyAdminApp/remedyRest/index
+// curl -H "Content-Type: application/json" -X GET http://localhost:8080/RemedyAdminApp/remedyRest/remedyList
 // curl -H "Content-Type: application/json" -X POST -d '{"description":"face2", "statusId":1, "areaId":1}' http://localhost:8080/RemedyAdminApp/remedyRest/save
 class RemedyRestController extends RestfulController {
     static responseFormats = ['json', 'xml']
@@ -50,6 +50,7 @@ class RemedyRestController extends RestfulController {
                 jSONLog.status = log.status
                 jSONLog.lastUpdated =  getNiceDate(log.lastUpdated)
                 jSONLog.statusChangeByName = log.statusChangeByName
+                jSONLog.userId = log?.user?.id
                 remedyItem.logs.add(jSONLog)
             }
             remedyItem.assignedTo = remedy.user.profile.fullName
@@ -202,6 +203,7 @@ class JSONLog {
     String lastUpdated
     Status status;
     String statusChangeByName
+    String userId
 }
 
 

@@ -29,11 +29,13 @@ class Remedy {
     def beforeInsert() {
         println "beforeInsert for remedy : status ${status.id}"
         def user = springSecurityService.currentUser
+        if(!user)
+            user = User.findById(1)
         def fullName = "Default need for testdata"
         if(user?.profile?.fullName)
             fullName = user?.profile?.fullName
 
-        this.addToLogs(new remedyadminapp.Log(statusChangeByName: fullName, status: status));
+        this.addToLogs(new remedyadminapp.Log(statusChangeByName: fullName, status: status, user: user));
     }
 
     def beforeUpdate() {
@@ -42,7 +44,7 @@ class Remedy {
         if(user?.profile?.fullName) {
             def fullName = user?.profile?.fullName
             println "fullName =" + fullName
-            def log = new remedyadminapp.Log(statusChangeByName: fullName, status: status, remedy: this)
+            def log = new remedyadminapp.Log(statusChangeByName: fullName, status: status, remedy: this, user : user)
             this.addToLogs(log);
         }
     }

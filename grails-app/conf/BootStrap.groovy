@@ -41,15 +41,15 @@ class BootStrap {
         def adminRole = new Role('ROLE_ADMIN').save()
         def userRole = new Role('ROLE_USER').save()
 
-        def profile1 = new Profile(fullName: "Test Testesen")
-        def profile2 = new Profile(fullName: "Mr Big")
+        def profile1 = new Profile(fullName: "Test Testesen", email: "test@test.dk", phoneNumber: "12333456")
+        def profile2 = new Profile(fullName: "Mr Big", email: "big@big.dk", phoneNumber: "9873-333")
        // profile.save()
         //def testUser = new User('me', 'password')
 
         // testUser.save()
 
         def testUser1 = new User(username: "me", password: "password", profile: profile1 ).save(failOnError: true)
-        def testUser2 = new User(username: "you", password: "password", profile: profile2 ).save(failOnError: true)
+        def testUser2 = new User(username: "big", password: "password", profile: profile2 ).save(failOnError: true)
 
        /*
         def chuck = new User(
