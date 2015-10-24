@@ -1,7 +1,6 @@
 import grails.util.Environment
 import remedyadminapp.Area
 import remedyadminapp.Machine
-import remedyadminapp.Nose
 import remedyadminapp.Remedy
 import remedyadminapp.ErrorType
 import remedyadminapp.Status
@@ -70,8 +69,7 @@ class BootStrap {
 
     private void seedTestData() {
 
-        Nose nose1 = new Nose(name: "nose1")
-        assert nose1.save(failOnError:true, flush:true, insert: true)
+
         def area = null
         println "Start loading areas into database"
         area = new Area(displayText: 'Area1')

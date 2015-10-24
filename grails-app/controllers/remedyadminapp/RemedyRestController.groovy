@@ -198,6 +198,45 @@ class RemedyRestController extends RestfulController {
         //respond updateRemedy, status: 201
         respond status: 201
     }
+
+    def updateImage(UpdateRemedy remedyInstance) {
+        println "description ${remedyInstance.description} "
+        def f = request?.getFile('photo')
+
+        println f
+        println f.bytes
+        println f.contentType
+
+
+        if (remedyInstance == null) {
+            respond status: HttpStatus.BAD_REQUEST
+        }
+
+        if (remedyInstance.hasErrors()) {
+            println "Errors ${remedyInstance.errors}"
+            respond status: HttpStatus.BAD_REQUEST
+        }
+
+        Status status = Status.findById remedyInstance.statusId
+        Area area = Area.findById remedyInstance.areaId
+        Machine machine = Machine.findById remedyInstance.machineId
+        ErrorType errorType = ErrorType.findById remedyInstance.errorTypeId
+
+
+        def updateRemedy = Remedy.findById(remedyInstance.id)
+        updateRemedy.description = remedyInstance.description
+        updateRemedy.status = status
+        updateRemedy.area = area
+        updateRemedy.machine = machine
+        updateRemedy.errorType = errorType
+        updateRemedy.photo = f.bytes
+
+        updateRemedy.save(flush: true)
+        //  updateRemedy.save()
+
+        //respond updateRemedy, status: 201
+        respond status: 201
+    }
 }
 class JSONLog {
     String lastUpdated

@@ -69,3 +69,4 @@ class User implements Serializable {
         password column: '`password`'
     }
 }
+

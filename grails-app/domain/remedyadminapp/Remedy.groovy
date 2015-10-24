@@ -21,6 +21,7 @@ class Remedy {
     static belongsTo = [ user: User ]   // when the user is deleted all his remedy's is deleted too
 
     static constraints = {
+
         area()
         photo nullable: true, maxSize: 2 * 1024 * 1024
         user nullable: true
@@ -30,12 +31,13 @@ class Remedy {
         println "beforeInsert for remedy : status ${status.id}"
         def user = springSecurityService.currentUser
         if(!user)
-            user = User.findById(1)
+            user = User.findById(1)   // added for test purpose...
         def fullName = "Default need for testdata"
         if(user?.profile?.fullName)
             fullName = user?.profile?.fullName
 
         this.addToLogs(new remedyadminapp.Log(statusChangeByName: fullName, status: status, user: user));
+        this.setUser(user)
     }
 
     def beforeUpdate() {
@@ -47,5 +49,6 @@ class Remedy {
             def log = new remedyadminapp.Log(statusChangeByName: fullName, status: status, remedy: this, user : user)
             this.addToLogs(log);
         }
+        this.setUser(user)
     }
 }

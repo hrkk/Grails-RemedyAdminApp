@@ -1,26 +1,26 @@
 package remedyadminapp
 
-import javax.servlet.ServletOutputStream
-
-import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
-@Transactional(readOnly = true)
+import javax.servlet.ServletOutputStream
+
 class RemedyController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "DELETE"]
 
-    def scaffold = true
+    static scaffold = true
 
-    /*
-
-    def index(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
-        respond Remedy.list(params), model: [remedyInstanceCount: Remedy.count()]
-    }
-
-    def show(Remedy remedyInstance) {
-        respond remedyInstance
+    def avatar_image() {
+        def avatarUser = Remedy.get(params.id)
+        if (!avatarUser || !avatarUser.photo) {
+            response.sendError(404)
+            return
+        }
+        response.contentType = "jpg"
+        response.contentLength = avatarUser.photo.size()
+        OutputStream out = response.outputStream
+        out.write(avatarUser.photo)
+        out.close()
     }
 
     def showImage(int id) {
@@ -36,22 +36,6 @@ class RemedyController {
         }
     }
 
-    def create() {
-        respond new Remedy(params)
-    }
-
-    def avatar_image() {
-        def avatarUser = Remedy.get(params.id)
-        if (!avatarUser || !avatarUser.photo) {
-            response.sendError(404)
-            return
-        }
-        response.contentType = "jpg"
-        response.contentLength = avatarUser.photo.size()
-        OutputStream out = response.outputStream
-        out.write(avatarUser.photo)
-        out.close()
-    }
 
     @Transactional
     def save(Remedy remedyInstance) {
@@ -80,58 +64,4 @@ class RemedyController {
         flash.message = message(code: 'default.created.message', args: [message(code: 'remedyInstance.label', default: 'Remedy'), remedyInstance.id])
         redirect(action:'show')
     }
-
-    def edit(Remedy remedyInstance) {
-        respond remedyInstance
-    }
-
-    @Transactional
-    def update(Remedy remedyInstance) {
-        if (remedyInstance == null) {
-            notFound()
-            return
-        }
-
-        if (remedyInstance.hasErrors()) {
-            respond remedyInstance.errors, view: 'bck_edit'
-            return
-        }
-
-        remedyInstance.save flush: true
-
-
-
-        flash.message = message(code: 'default.updated.message', args: [message(code: 'Remedy.label', default: 'Remedy'), remedyInstance.id])
-        redirect(action:'index')
-    }
-
-    @Transactional
-    def delete(Remedy remedyInstance) {
-
-        if (remedyInstance == null) {
-            notFound()
-            return
-        }
-
-        remedyInstance.delete flush: true
-
-        request.withFormat {
-            form {
-                flash.message = message(code: 'default.deleted.message', args: [message(code: 'Remedy.label', default: 'Remedy'), remedyInstance.id])
-                redirect action: "index", method: "GET"
-            }
-            '*' { render status: NO_CONTENT }
-        }
-    }
-
-    protected void notFound() {
-        request.withFormat {
-            form {
-                flash.message = message(code: 'default.not.found.message', args: [message(code: 'remedyInstance.label', default: 'Remedy'), params.id])
-                redirect action: "index", method: "GET"
-            }
-            '*' { render status: NOT_FOUND }
-        }
-    }
-    */
 }

@@ -5,7 +5,7 @@ class Profile {
     String fullName
     String email
     String phoneNumber
-
+    static hasMany = [areas: Area, machines: Machine]
     static constraints = {
         fullName blank: false
         email blank: true
