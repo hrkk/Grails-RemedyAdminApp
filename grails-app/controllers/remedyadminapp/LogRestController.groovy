@@ -12,8 +12,8 @@ class LogRestController extends RestfulController {
     }
 
     def getUser(int id){
-        def log = Log.findById(id)
-        def user = log.user
+        def user = User.findById(id)
+     //   def user = log.user
 
         def jSONUser = new JSONUser(fullName: user.profile.fullName, email: user?.profile?.email, phoneNumber: user?.profile?.phoneNumber)
         respond jSONUser, status: 200

@@ -37,7 +37,7 @@ class UserController {
 //        }
 
         if (userInstance.hasErrors()) {
-            respond userInstance.errors, view:'create'
+            respond userInstance.errors, view:'register'
             return
         }
 
@@ -150,6 +150,7 @@ class UserController {
     }
 }
 
+@grails.validation.Validateable
 class UserCmd {
     String username
     String password
@@ -166,10 +167,8 @@ class UserCmd {
         username blank: false, unique: true
         password blank: false
         fullName blank: false
-        email blank: true
-        phoneNumber blank: true
-
+        email nullable: true, blank: true
+        phoneNumber nullable: true, blank: true
     }
-
 }
 

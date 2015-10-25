@@ -9,6 +9,11 @@ class UrlMappings {
 
         "/api/faces"(resource: "faceRest")
 
+        "/register"{
+            controller = "user"
+            action = "register"
+        }
+
         "/"(view:"/index")
         "500"(view:'/error')
 
