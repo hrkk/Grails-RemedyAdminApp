@@ -22,7 +22,7 @@ class Remedy {
 
     static constraints = {
 
-        area()
+        id()
         photo nullable: true, maxSize: 2 * 1024 * 1024
         user nullable: true
     }

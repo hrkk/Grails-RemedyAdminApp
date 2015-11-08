@@ -1,43 +1,738 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/UserRestController.groovy" line="25" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" line="11" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53004f4d-bfa1-461d-862b-e675734074e6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/user/_registerForm.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/user/_registerProfileForm.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/user/register.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/AreaController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/FaceController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/FaceRestController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/MachineController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/NoseController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/NoseRestController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/RemedyErrorController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/RoleController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/StatusController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/domain/remedyadminapp/Face.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grails-app/domain/remedyadminapp/Nose.groovy" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/views/bck_remedy/bck_create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/remedy/create.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/views/bck_remedy/bck_edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/remedy/edit.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/views/bck_remedy/bck_form.gsp" afterPath="$PROJECT_DIR$/grails-app/views/remedy/_form.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/views/bck_remedy/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/remedy/index.gsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/views/bck_remedy/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/remedy/show.gsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/RemedyAdminApp-0.1.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/RemedyAdminApp11102015.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/RemedyAdminApp3008.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ApplicationResources$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ApplicationResources$_run_closure1_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ApplicationResources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/BootStrap$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/BootStrap$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/BootStrap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure4_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure4_closure5_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure1_closure4_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure2_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure2_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure4_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure5_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3_closure6_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/DataSource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/UrlMappings$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/UrlMappings$__clinit__closure1_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/UrlMappings$__clinit__closure1_closure2_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/UrlMappings.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp/views.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_globalnav_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_globalnav_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_globalnav_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_globalnav_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_globalnav_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_globalnav_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_index_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_index_gsp$_run_closure1_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_index_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_index_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_index_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_overview_summary_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_overview_summary_gsp$_run_closure1_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_overview_summary_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_overview_summary_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_overview_summary_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_stylesheet_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_stylesheet_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_databaseMigration_dbdoc_stylesheet_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_create_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_create_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_create_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_create_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_create_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_create_gsp$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_create_gsp$_run_closure2_closure6_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_create_gsp$_run_closure2_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_create_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_create_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_create_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_edit_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_edit_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_edit_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_edit_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_edit_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_edit_gsp$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_edit_gsp$_run_closure2_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_edit_gsp$_run_closure2_closure7_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_edit_gsp$_run_closure2_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_edit_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_edit_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_edit_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_form_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_form_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedybck_form_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyindex_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyindex_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyindex_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyindex_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyindex_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyindex_gsp$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyindex_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyindex_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyindex_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp$_run_closure2_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp$_run_closure2_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp$_run_closure2_closure11_closure12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp$_run_closure2_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp$_run_closure2_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp$_run_closure2_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_bck_remedyshow_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_layoutsmain_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_layoutsmain_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_layoutsmain_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_layoutsmain_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_layoutsmain_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_layoutsmain_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_layoutsmain_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profile_form_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profile_form_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profile_form_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profilecreate_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profilecreate_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profilecreate_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profilecreate_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profilecreate_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profilecreate_gsp$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profilecreate_gsp$_run_closure2_closure6_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profilecreate_gsp$_run_closure2_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profilecreate_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profilecreate_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profilecreate_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileedit_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileedit_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileedit_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileedit_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileedit_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileedit_gsp$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileedit_gsp$_run_closure2_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileedit_gsp$_run_closure2_closure7_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileedit_gsp$_run_closure2_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileedit_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileedit_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileedit_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileindex_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileindex_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileindex_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileindex_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileindex_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileindex_gsp$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileindex_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileindex_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileindex_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp$_run_closure2_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp$_run_closure2_closure10_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp$_run_closure2_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp$_run_closure2_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp$_run_closure2_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_profileshow_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_user_form_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_user_form_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_user_form_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_user_form_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_user_form_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_user_registerForm_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_user_registerForm_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_user_registerForm_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_user_registerProfileForm_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_user_registerProfileForm_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_user_registerProfileForm_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usercreate_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usercreate_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usercreate_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usercreate_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usercreate_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usercreate_gsp$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usercreate_gsp$_run_closure2_closure6_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usercreate_gsp$_run_closure2_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usercreate_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usercreate_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usercreate_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_useredit_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_useredit_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_useredit_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_useredit_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_useredit_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_useredit_gsp$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_useredit_gsp$_run_closure2_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_useredit_gsp$_run_closure2_closure7_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_useredit_gsp$_run_closure2_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_useredit_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_useredit_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_useredit_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userindex_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userindex_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userindex_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userindex_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userindex_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userindex_gsp$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userindex_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userindex_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userindex_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userregister_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userregister_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userregister_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userregister_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userregister_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userregister_gsp$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userregister_gsp$_run_closure2_closure6_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userregister_gsp$_run_closure2_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userregister_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userregister_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_userregister_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usershow_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usershow_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usershow_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usershow_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usershow_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usershow_gsp$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usershow_gsp$_run_closure2_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usershow_gsp$_run_closure2_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usershow_gsp$_run_closure2_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usershow_gsp$_run_closure2_closure9_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usershow_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usershow_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApp_usershow_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApperror_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApperror_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApperror_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApperror_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApperror_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApperror_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminApperror_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminAppindex_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminAppindex_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminAppindex_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminAppindex_gsp$_run_closure2_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminAppindex_gsp$_run_closure2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminAppindex_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminAppindex_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_remedyAdminAppindex_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_loginauth_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_loginauth_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_loginauth_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_loginauth_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_loginauth_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_loginauth_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_loginauth_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_logindenied_gsp$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_logindenied_gsp$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_logindenied_gsp$_run_closure1_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_logindenied_gsp$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_logindenied_gsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_logindenied_gsp_html.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/gsp_springSecurityCore_logindenied_gsp_linenumbers.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Area$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Area.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/AreaControllerRestController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ErrorType$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ErrorType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/JSONLog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/JSONRemedyItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/JSONUser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Log$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Log$__clinit__closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Log.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/LogRestController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Machine$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Machine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/MachineRestController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Profile$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Profile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_$tt__delete_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_$tt__save_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_$tt__update_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_create_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_delete_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_edit_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_index_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_notFound_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_notFound_closure8_closure12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_notFound_closure8_closure13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_save_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_show_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_tt__delete_closure11_closure18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_tt__delete_closure11_closure19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_tt__save_closure9_closure14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_tt__save_closure9_closure15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_tt__update_closure10_closure16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_tt__update_closure10_closure17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController$_update_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/ProfileJson.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Remedy$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Remedy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/RemedyApi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/RemedyController$_save_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/RemedyController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/RemedyErrorRestController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/RemedyRestController$_remedyList_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/RemedyRestController$_remedyList_closure1_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/RemedyRestController$_remedyList_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/RemedyRestController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Role$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Role$__clinit__closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Role.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/SaveRemedy$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/SaveRemedy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/Status.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/StatusRestController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UpdateRemedy$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UpdateRemedy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/User$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/User$__clinit__closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserCmd$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserCmd.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_$tt__delete_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_$tt__delete_closure12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_$tt__delete_closure14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_$tt__save2_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_$tt__save_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_$tt__save_closure12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_$tt__save_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_$tt__update_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_$tt__update_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_$tt__update_closure13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_create_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_delete_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_delete_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_delete_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_edit_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_edit_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_edit_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_index_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_notFound_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_notFound_closure10_closure15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_notFound_closure10_closure16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_notFound_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_notFound_closure8_closure12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_notFound_closure8_closure13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_notFound_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_notFound_closure9_closure13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_notFound_closure9_closure14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_register_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_save2_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_save_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_save_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_save_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_show_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__delete_closure11_closure18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__delete_closure11_closure19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__delete_closure12_closure19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__delete_closure12_closure20.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__delete_closure14_closure23.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__delete_closure14_closure24.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__save2_closure11_closure17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__save2_closure11_closure18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__save_closure10_closure15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__save_closure10_closure16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__save_closure12_closure19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__save_closure12_closure20.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__save_closure9_closure14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__save_closure9_closure15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__update_closure10_closure16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__update_closure10_closure17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__update_closure11_closure17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__update_closure11_closure18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__update_closure13_closure21.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_tt__update_closure13_closure22.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_update_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_update_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController$_update_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRestController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole$__clinit__closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole$__clinit__closure8_closure12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole$__clinit__closure8_closure12_closure13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole$__clinit__closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole$_criteriaFor_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole$_criteriaFor_closure1_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole$_removeAll_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole$_removeAll_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole$_removeAll_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole$_removeAll_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole$_remove_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole$_remove_closure2_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole$_remove_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/remedyadminapp/UserRole.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/resources$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/resources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_databaseMigration_dbdoc_globalnav_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_databaseMigration_dbdoc_index_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_databaseMigration_dbdoc_overview_summary_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_databaseMigration_dbdoc_stylesheet_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_bck_remedybck_create_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_bck_remedybck_edit_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_bck_remedybck_form_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_bck_remedyindex_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_bck_remedyshow_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_layoutsmain_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_profile_form_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_profilecreate_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_profileedit_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_profileindex_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_profileshow_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_user_form_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_user_registerForm_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_user_registerProfileForm_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_usercreate_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_useredit_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_userindex_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_userregister_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApp_usershow_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminApperror_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_remedyAdminAppindex_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_springSecurityCore_loginauth_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/gspcompile/gsp_springSecurityCore_logindenied_gsp.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_cs_CZ.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_da.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_de.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_es.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_fr.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_it.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_ja.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_nb.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_nl.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_pl.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_pt_BR.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_pt_PT.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_ru.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_sv.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_th.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/grails-app/i18n/messages_zh_CN.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/hibernate.cfg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/plugins/hibernate-3.6.10.6/grails-app/i18n/messages.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/plugins/resources-1.2.1/grails-app/i18n/messages.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/plugins/spring-security-core-2.0-RC5/grails-app/i18n/spring-security-core.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/plugins/spring-security-core-2.0-RC5/grails-app/i18n/spring-security-core_de.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/plugins/spring-security-core-2.0-RC5/grails-app/i18n/spring-security-core_es.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/plugins/spring-security-core-2.0-RC5/grails-app/i18n/spring-security-core_fr.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/plugins/spring-security-core-2.0-RC5/grails-app/i18n/spring-security-core_it.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/plugins/spring-security-core-2.0-RC5/grails-app/i18n/spring-security-core_ja.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/plugins/spring-security-core-2.0-RC5/grails-app/i18n/spring-security-core_nb.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/plugins/spring-security-core-2.0-RC5/grails-app/i18n/spring-security-core_pt_BR.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/plugins/spring-security-core-2.0-RC5/grails-app/i18n/spring-security-core_ru.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/plugins/spring-security-core-2.0-RC5/grails-app/i18n/spring-security-core_sv.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/resources/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/GenerateAll$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/GenerateAll.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsBootstrap_groovy$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsBootstrap_groovy$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsBootstrap_groovy$_run_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsBootstrap_groovy$_run_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsBootstrap_groovy$_run_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsBootstrap_groovy$_run_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsBootstrap_groovy$_run_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsBootstrap_groovy$_run_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsBootstrap_groovy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCompile_groovy$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCompile_groovy$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCompile_groovy$_run_closure2_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCompile_groovy$_run_closure2_closure6_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCompile_groovy$_run_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCompile_groovy$_run_closure3_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCompile_groovy$_run_closure3_closure8_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCompile_groovy$_run_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCompile_groovy$_run_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCompile_groovy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCreateArtifacts_groovy$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCreateArtifacts_groovy$_run_closure1_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCreateArtifacts_groovy$_run_closure1_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCreateArtifacts_groovy$_run_closure1_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCreateArtifacts_groovy$_run_closure1_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCreateArtifacts_groovy$_run_closure1_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCreateArtifacts_groovy$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCreateArtifacts_groovy$_run_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCreateArtifacts_groovy$_run_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCreateArtifacts_groovy$_run_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsCreateArtifacts_groovy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsGenerate_groovy$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsGenerate_groovy$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsGenerate_groovy$_run_closure2_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsGenerate_groovy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsPackage_groovy$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsPackage_groovy$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsPackage_groovy$_run_closure2_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsPackage_groovy$_run_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsPackage_groovy$_run_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsPackage_groovy$_run_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsPackage_groovy$_run_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsPackage_groovy$_run_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsPackage_groovy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsRun_groovy$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsRun_groovy$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsRun_groovy$_run_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsRun_groovy$_run_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsRun_groovy$_run_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsRun_groovy$_run_closure5_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsRun_groovy$_run_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsRun_groovy$_run_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsRun_groovy$_run_closure7_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsRun_groovy$_run_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsRun_groovy$_run_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsRun_groovy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsWar_groovy$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsWar_groovy$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsWar_groovy$_run_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsWar_groovy$_run_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsWar_groovy$_run_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsWar_groovy$_run_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsWar_groovy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_PackagePlugins_groovy$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_PackagePlugins_groovy$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_PackagePlugins_groovy$_run_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/scriptCache/_PackagePlugins_groovy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/antlr-2.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/asm-3.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/aspectjrt-1.7.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/aspectjweaver-1.7.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/cglib-2.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/commons-beanutils-1.8.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/commons-codec-1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/commons-collections-3.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/commons-el-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/commons-fileupload-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/commons-io-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/commons-lang-2.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/commons-validator-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/concurrentlinkedhashmap-lru-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/dom4j-1.6.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/ehcache-2.9.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/ehcache-core-2.4.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/gpars-1.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/groovy-all-2.1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/gson-2.2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/h2-1.3.173.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/hamcrest-core-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/hibernate-commons-annotations-3.2.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/hibernate-core-3.6.10.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/hibernate-ehcache-3.6.10.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/hibernate-entitymanager-3.6.10.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/hibernate-jpa-2.0-api-1.0.1.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/hibernate-validator-4.1.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/javassist-3.17.1-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/jcl-over-slf4j-1.7.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/jsr166y-1.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/jstl-1.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/jta-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/jul-to-slf4j-1.7.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/liquibase-core-2.0.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/multiverse-core-0.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/objenesis-1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/oro-2.0.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/serializer-2.7.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/sitemesh-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/slf4j-api-1.7.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-aop-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-aspects-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-beans-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-context-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-context-support-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-core-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-expression-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-jdbc-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-orm-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-security-core-3.2.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-security-web-3.2.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-tx-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-web-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/spring-webmvc-3.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/standard-1.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/tomcat-embed-logging-log4j-7.0.47.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/tomcat-jdbc-7.0.47.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/validation-api-1.0.0.GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/sharedLibs/xpp3_min-1.1.4c.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/css/mobile.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/apple-touch-icon-retina.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/grails_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/skin/database_add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/skin/database_delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/skin/database_edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/skin/database_save.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/skin/database_table.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/skin/exclamation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/skin/house.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/skin/information.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/skin/sorted_asc.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/skin/sorted_desc.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/images/spinner.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/js/application.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/plugins/jquery-1.10.2.2/js/jquery/jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/tomcat/work/Tomcat/localhost/RemedyAdminApp/grails-resources/plugins/jquery-1.10.2.2/js/jquery/jquery-1.10.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/web.xml.tmp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/RemedyAdminApp.war" afterPath="$PROJECT_DIR$/target/RemedyAdminApp.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/TomcatGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/TomcatGrailsPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/InlineExplodedTomcatServer.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/InlineExplodedTomcatServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/TomcatLoader.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/TomcatLoader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/TomcatServer.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/TomcatServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/TomcatServerFactory.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/TomcatServerFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/ForkedTomcatServer.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/ForkedTomcatServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/TomcatDevelopmentRunner.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/TomcatDevelopmentRunner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/TomcatExecutionContext.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/TomcatExecutionContext.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/TomcatWarRunner.class" afterPath="$PROJECT_DIR$/target/work/plugin-build-classes/org/grails/plugins/tomcat/fork/TomcatWarRunner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/CacheGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/CacheGrailsPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DatabaseMigrationGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DatabaseMigrationGrailsPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DbdocUrlMappings.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DbdocUrlMappings.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DefaultCacheConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DefaultCacheConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DefaultSecurityConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DefaultSecurityConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/DefaultWebXmlConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/DefaultWebXmlConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/HibernateGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/HibernateGrailsPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryPluginResources.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryPluginResources.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryResourceTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryResourceTagLib.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryTagLib.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/JqueryGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JqueryGrailsPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/ResourcesBootStrap.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ResourcesBootStrap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/ResourcesGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ResourcesGrailsPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/ScaffoldingGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/ScaffoldingGrailsPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/SpringSecurityCoreGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/SpringSecurityCoreGrailsPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/WebxmlGrailsPlugin.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/WebxmlGrailsPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/CacheTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/CacheTagLib.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/ConfigBuilder.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/ConfigBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/ConfigLoader.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/ConfigLoader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/GrailsCacheAdminService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/GrailsCacheAdminService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/ChangelogXml2Groovy.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/ChangelogXml2Groovy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DbdocController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DbdocController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DslBuilder.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DslBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormColumn.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormColumn.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabase.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabaseTypeConverter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDatabaseTypeConverter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDiff.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GormDiff.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChange.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChange.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChangeLogParser.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChangeLogParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsClassLoaderResourceAccessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsClassLoaderResourceAccessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsDiffStatusListener.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsDiffStatusListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsPrecondition.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsPrecondition.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GroovyAwareStringChangeLogSerializer.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GroovyAwareStringChangeLogSerializer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/HibernateAwareTypeConverter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/HibernateAwareTypeConverter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MigrationRunner.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MigrationRunner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MigrationUtils.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MigrationUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MySQLCompatibleChangeLogSerializer.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MySQLCompatibleChangeLogSerializer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MysqlAwareCreateTableGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/MysqlAwareCreateTableGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/NoopVisitor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/NoopVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/ScriptUtils.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/ScriptUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/Slf4jLogger.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/Slf4jLogger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/AuthorListWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/AuthorListWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/AuthorWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/AuthorWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ChangeLogListWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ChangeLogListWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ChangeLogWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ChangeLogWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ColumnWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/ColumnWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/HTMLListWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/HTMLListWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/HTMLWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/HTMLWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/MemoryDocVisitor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/MemoryDocVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/PendingChangesWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/PendingChangesWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/PendingSQLWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/PendingSQLWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/RecentChangesWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/RecentChangesWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/TableListWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/TableListWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/TableWriter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/dbdoc/TableWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/hibernate3/HibernatePluginSupport.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/hibernate3/HibernatePluginSupport.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/InterceptedUrl.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/InterceptedUrl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/LoginController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/LoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/LogoutController.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/LogoutController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ReflectionUtils.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/ReflectionUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/SecurityTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/SecurityTagLib.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/SpringSecurityService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/SpringSecurityService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/userdetails/GormUserDetailsService.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/userdetails/GormUserDetailsService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/web/authentication/rememberme/GormPersistentTokenRepository.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/springsecurity/web/authentication/rememberme/GormPersistentTokenRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/webxml/FilterManager.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/webxml/FilterManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/scaffolding/DefaultGrailsTemplateGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/codehaus/groovy/grails/scaffolding/DefaultGrailsTemplateGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/AggregatedResourceMeta.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/AggregatedResourceMeta.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/BaseUrlResourceMapper.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/BaseUrlResourceMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/BundleResourceMapper.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/BundleResourceMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/CSSBundleResourceMeta.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/CSSBundleResourceMeta.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/CSSLinkProcessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/CSSLinkProcessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/CSSPreprocessorResourceMapper.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/CSSPreprocessorResourceMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/CSSRewriterResourceMapper.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/CSSRewriterResourceMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/DevModeSanityFilter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/DevModeSanityFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/JavaScriptBundleResourceMeta.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/JavaScriptBundleResourceMeta.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/ProcessingFilter.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/ProcessingFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/ResourceMeta.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/ResourceMeta.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/ResourceModule.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/ResourceModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/ResourceProcessor.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/ResourceProcessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/ResourceProcessorBatch.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/ResourceProcessorBatch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/ResourceTagLib.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/ResourceTagLib.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/URLUtils.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/URLUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/mapper/MapperPhase.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/mapper/MapperPhase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/mapper/ResourceMapper.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/mapper/ResourceMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/mapper/ResourceMappersFactory.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/mapper/ResourceMappersFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/module/ModuleBuilder.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/module/ModuleBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/module/ModuleDeclarationsFactory.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/module/ModuleDeclarationsFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/module/ModulesBuilder.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/module/ModulesBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/util/DispositionsUtils.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/util/DispositionsUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/util/HalfBakedLegacyLinkGenerator.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/util/HalfBakedLegacyLinkGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/util/ResourceMetaStore.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/util/ResourceMetaStore.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/util/StatsManager.class" afterPath="$PROJECT_DIR$/target/work/plugin-classes/org/grails/plugin/resource/util/StatsManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/IdeaPrintProjectSettings.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/IdeaPrintProjectSettings.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/LinkedProperties.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/LinkedProperties.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/ListEnumeration.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/ListEnumeration.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsArgParsing_groovy.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/_GrailsArgParsing_groovy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsClasspath_groovy.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/_GrailsClasspath_groovy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsClean_groovy.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/_GrailsClean_groovy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsEvents_groovy.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/_GrailsEvents_groovy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsInit_groovy.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/_GrailsInit_groovy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsProxy_groovy.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/_GrailsProxy_groovy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/_GrailsSettings_groovy.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/_GrailsSettings_groovy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/scriptCache/_PluginDependencies_groovy.class" afterPath="$PROJECT_DIR$/target/work/scriptCache/_PluginDependencies_groovy.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/ProfileController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/ProfileController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/RemedyController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/RemedyController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/RemedyRestController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/RemedyRestController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/UserController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/UserController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/remedyadminapp/Profile.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/remedyadminapp/Profile.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RemedyAdminApp-grailsPlugins.iml" afterPath="$PROJECT_DIR$/RemedyAdminApp-grailsPlugins.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/remedyadminapp/Remedy.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/remedyadminapp/Remedy.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/remedyadminapp/User.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/remedyadminapp/User.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/remedyadminapp/RemedyControllerSpec.groovy" afterPath="$PROJECT_DIR$/test/unit/remedyadminapp/RemedyControllerSpec.groovy" />
     </list>
     <ignored path="Grails-RemedyAdminApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -146,8 +841,18 @@
       <file leaf-file-name="UserController.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/UserController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.695652">
-              <caret line="66" column="53" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/remedy/index.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="64" column="14" selection-start-line="17" selection-start-column="8" selection-end-line="64" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -156,98 +861,78 @@
       <file leaf-file-name="show.gsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/remedy/show.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.1914895">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/remedy/create.gsp">
+      <file leaf-file-name="register.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/user/register.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="119" selection-start-line="21" selection-start-column="119" selection-end-line="21" selection-end-column="119" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grails_logo.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/images/grails_logo.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.050933786">
+              <caret line="2" column="43" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="edit.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/remedy/edit.gsp">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/user/edit.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5744681">
-              <caret line="29" column="81" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/remedy/_form.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RemedyController.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/RemedyController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.304348">
-              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-              <folding>
-                <element signature="e#24#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfileController.groovy" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/ProfileController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.6216815">
-              <caret line="80" column="34" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Profile.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/Profile.groovy">
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.1730769">
-              <caret line="11" column="31" selection-start-line="9" selection-start-column="5" selection-end-line="11" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BootStrap.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <file leaf-file-name="Remedy.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/Remedy.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="44" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/User.groovy">
           <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="14.365385">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="148" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -280,10 +965,8 @@
         <option value="$PROJECT_DIR$/scripts/Encode.groovy" />
         <option value="$PROJECT_DIR$/scripts/heps.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/AreaControllerRestController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/UserRestController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/RoleController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/remedyadminapp/Log.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/LogRestController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/RemedyRestController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
@@ -292,18 +975,23 @@
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/profile/_form.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/user/_profileForm.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/user/_registerForm.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/user/register.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/user/_registerProfileForm.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/remedyadminapp/User.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/remedyadminapp/Remedy.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/UserController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/RemedyController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/remedy/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/user/_registerForm.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/user/_registerProfileForm.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/user/register.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/LogRestController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/UserRestController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/remedyadminapp/UserController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/remedyadminapp/Remedy.groovy" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
@@ -349,6 +1037,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -357,15 +1046,13 @@
               <option name="myItemId" value="Grails-RemedyAdminApp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Grails-RemedyAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Grails-RemedyAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="grails-2.3.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -374,16 +1061,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Grails-RemedyAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -394,85 +1073,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Grails-RemedyAdminApp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="remedy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grails-RemedyAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grails-RemedyAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grails-RemedyAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grails-RemedyAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="remedyadminapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grails-RemedyAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grails-RemedyAdminApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="remedyadminapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserController.groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -489,7 +1093,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../PushChat" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="FullScreen" value="false" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -829,6 +1432,22 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -925,6 +1544,9 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
@@ -995,50 +1617,56 @@
       <workItem from="1445316087250" duration="6408000" />
       <workItem from="1445487246217" duration="2014000" />
       <workItem from="1445542178201" duration="634000" />
-      <workItem from="1445665079736" duration="5751000" />
+      <workItem from="1445665079736" duration="11613000" />
+      <workItem from="1446210020563" duration="1147000" />
+      <workItem from="1446216834249" duration="2028000" />
+      <workItem from="1446312522907" duration="5613000" />
+      <workItem from="1446580038174" duration="563000" />
+      <workItem from="1446964070546" duration="464000" />
+      <workItem from="1446964593984" duration="167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78416000" />
+    <option name="totallyTimeSpent" value="94260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="23" width="1260" height="733" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284553" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18211383" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284553" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284553" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24876848" sideWeight="0.5707317" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31869918" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958949" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24552846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31707317" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298193" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40325204" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1078,18 +1706,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/UserController.groovy</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/UserController.groovy</url>
           <line>74</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/LogRestController.groovy</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="41" />
+      <option name="time" value="43" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1098,37 +1726,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/remedy/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="107" selection-start-line="45" selection-start-column="107" selection-end-line="45" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/Area.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="23" selection-start-line="3" selection-start-column="3" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gvm/grails/2.3.4/dist/grails-bootstrap-2.3.4-sources.jar!/grails/util/Environment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="307" column="0" selection-start-line="307" selection-start-column="0" selection-end-line="307" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gvm/grails/2.3.4/src/grails-datastore-gorm-2.0.6.RELEASE-sources.jar!/org/grails/datastore/gorm/GormInstanceApi.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="99" column="6" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gvm/grails/2.3.4/lib/org.springframework/spring-webmvc/jars/spring-webmvc-3.2.5.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35755813">
@@ -1154,16 +1751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/Status.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1237,26 +1824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/Role.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/Log.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9230769">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/3.2.5.RELEASE/spring-orm-3.2.5.RELEASE.jar!/org/springframework/orm/hibernate3/HibernateTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1282,15 +1849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/LogRestController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="125" selection-start-line="17" selection-start-column="125" selection-end-line="17" selection-end-column="125" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1308,26 +1866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9130435">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/UserRole.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/UserRestController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.73913">
-          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1335,7 +1873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6086957">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1343,15 +1880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6086957">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="142" column="14" selection-start-line="142" selection-start-column="14" selection-end-line="142" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1359,23 +1887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/_form.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.9148936">
-          <caret line="73" column="6" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1383,74 +1894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.80851066">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="26" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/register.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.009901">
-          <caret line="27" column="47" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/_registerForm.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.472973">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/user/_registerProfileForm.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="35" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/Remedy.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6346154">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="44" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/User.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="14.365385">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/Profile.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1730769">
-          <caret line="11" column="31" selection-start-line="9" selection-start-column="5" selection-end-line="11" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1458,7 +1901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1466,7 +1908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5744681">
           <caret line="29" column="81" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1474,40 +1915,194 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gvm/grails/2.3.4/dist/grails-plugin-rest-2.3.4-sources.jar!/org/grails/plugins/web/rest/api/ControllersRestApi.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/user/_form.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9148936">
+          <caret line="73" column="6" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/user/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/user/_registerForm.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8723404">
+          <caret line="11" column="58" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/user/_registerProfileForm.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/ProfileController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/Role.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/UserRole.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/LogRestController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="48" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/UserRestController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/User.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="4" selection-start-line="12" selection-start-column="3" selection-end-line="159" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/RemedyController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="5" selection-start-line="12" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/remedy/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="14" selection-start-line="17" selection-start-column="8" selection-end-line="64" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/remedy/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1914895">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/RemedyController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.304348">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/UserController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.695652">
-          <caret line="66" column="53" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/remedyadminapp/ProfileController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/user/register.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6216815">
-          <caret line="80" column="34" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="119" selection-start-line="21" selection-start-column="119" selection-end-line="21" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/images/grails_logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/user/edit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/remedyadminapp/Remedy.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="148" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.050933786">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
